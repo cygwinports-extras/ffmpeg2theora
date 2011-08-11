@@ -1,0 +1,15 @@
+DESCRIPTION="Converts videos to Ogg Theora format"
+HOMEPAGE="http://v2v.cc/~j/ffmpeg2theora/"
+SRC_URI="http://v2v.cc/~j/ffmpeg2theora/downloads/${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	scons || error "Scons compile failed"
+}
+
+src_install() {
+	cd ${B}
+	dobin ${PN}.exe
+	doman ${PN}.1
+}
