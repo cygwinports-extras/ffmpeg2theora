@@ -1,5 +1,0 @@
-category: Video
-requires: libavcodec53 libavdevice53 libavformat53 libavutil51 libiconv2 libkate1 libogg0 libpostproc52 libswscale2 libtheoradec1 libtheoraenc1 libvorbis0 libvorbisenc2
-sdesc: "Converts videos to Ogg Theora format"
-ldesc: "With ffmpeg2theora you can convert any file that FFmpeg can 
-decode to Ogg Theora."
