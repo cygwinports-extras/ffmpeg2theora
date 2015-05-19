@@ -1,12 +1,15 @@
 NAME="ffmpeg2theora"
 VERSION=0.29
-RELEASE=2
+RELEASE=3
 CATEGORY="Video"
 SUMMARY="Converts videos to Ogg Theora format"
 DESCRIPTION="With ffmpeg2theora you can convert any file that FFmpeg can decode
 to Ogg Theora."
 HOMEPAGE="http://v2v.cc/~j/ffmpeg2theora/"
 SRC_URI="http://v2v.cc/~j/ffmpeg2theora/downloads/${NAME}-${VERSION}.tar.bz2"
+PATCH_URI="
+	mirror://portage/media-video/${NAME}/files/ffmpeg2theora-0.29-ffmpeg2.patch
+"
 
 src_compile() {
 	lndirs
